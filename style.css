@@ -1,0 +1,116 @@
+/* タイピングゲーム全体 */
+body {
+  font-size: 3em; 
+  text-align: center;
+  background-color: aliceblue;
+}
+/* タイトル名 */
+.subtitle {
+  font-weight: bold;
+  color: rgb(79, 79, 79);
+  margin-bottom: auto;
+}
+
+/* ゲームの残り秒数が表示されるタイマーの領域 */
+ .count {
+  text-align: right;
+  color: red;
+  font-size: 40px;
+}
+
+/* ミュート アイコン */
+.sound-btn {
+  width: 100px;
+}
+
+ /* テキストが表示される領域 */
+ .wrap {
+  width: 70%;
+  height: 350px;
+  margin: auto;
+  padding: 10px 0px;
+  background-color: #eaeaea;
+  font-weight: bold;
+  color: #828282;
+  border: solid 40px #eaeaea;
+  border-radius: 20px;
+  box-shadow: 1px 0 5px 2px #999 inset; 
+  background-image: url(pics/world-map-g157665eec_1280.jpg);
+  background-size: contain;
+}
+
+/* 正しくタイプされた場合のテキスト */
+.typed {
+  color: rgb(209, 208, 208);
+}
+
+/* ミスタイプの場合の背景 */
+.mistyped {
+  color: red;
+  font-size: 1em;
+  font-style: italic;
+} 
+
+/* スタートボタン */
+#start {
+  width: 150px;
+  background: blue;
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#progressCircle {
+  height: 100px; 
+  
+  display: block; 
+  position: relative;
+  margin-bottom:10px;
+}
+
+svg {
+  display: block;
+  /* height: 100%;
+  width: 100%; */
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+
+.circle {
+  fill: rgba(0, 0, 0, 0);
+  stroke-width: 50;
+  stroke-dasharray: 0,157;
+  position: relative;
+}
+
+.seconds {      
+  font-size:38px;
+  font-weight: bold;
+  color: gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pie {
+  stroke: greenyellow;
+  animation: pie 60s linear;
+}
+
+.front {
+  fill: white;
+}
+
+@-webkit-keyframes pie {
+  50%,100% { stroke-dasharray: 157,157,0,0;}
+}
+
+@keyframes pie {
+  50%,100% { stroke-dasharray: 157,157,0,0;}
+}
