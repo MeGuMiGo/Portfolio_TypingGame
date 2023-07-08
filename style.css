@@ -108,9 +108,9 @@ svg {
 }
 
 @-webkit-keyframes pie {
-  50%,100% { stroke-dasharray: 157,157,0,0;}
+  50%,100% { stroke-dasharray: 316,316,0,0;}
 }
 
 @keyframes pie {
-  50%,100% { stroke-dasharray: 157,157,0,0;}
+  50%,100% { stroke-dasharray: 316,316,0,0;}
 }
